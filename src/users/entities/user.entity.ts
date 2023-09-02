@@ -15,6 +15,6 @@ export class User {
   @Column({ default: Date.now() })
   created_at: Date;
 
-  @ManyToOne(() => Post, (post) => post?.user)
-  posts: Post[];
+  // @ManyToOne(() => Post, (post) => post?.user)
+  // posts: Post[];
 }

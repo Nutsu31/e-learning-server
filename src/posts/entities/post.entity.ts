@@ -11,14 +11,17 @@ export class Post {
   title: string;
 
   @Column()
-  body: string;
+  path: string;
+  
+  // @Column()
+  // body: string;
 
-  @Column()
-  status: string;
+  // @Column()
+  // status: string;
 
-  @Column({ default: Date.now() })
-  created_at: Date;
+  // @Column({ default: Date.now() })
+  // created_at: Date;
 
-  @OneToMany(() => User, (user) => user.posts)
-  user: User;
+  // @OneToMany(() => User, (user) => user.posts)
+  // user: User;
 }
